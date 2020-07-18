@@ -1,7 +1,8 @@
 
 
-.container {
-    background-image: url('../images/fondo.png');
+body {
+    background-image: url("https://us.123rf.com/450wm/tihiychelovek/tihiychelovek1907/tihiychelovek190700099/130611355-cobweb-on-a-dark-background-dark-background.jpg?ver=6");
+    background-size: 100%;
 }
 
 #cabezera {
@@ -31,3 +32,96 @@ h2 {
     font-variant: small-caps;
     font-family: sans-serif;
 }
+
+.contenedor{
+    background-color: transparent;
+    border-color: white 2px ;
+    margin: 2% 25%;
+    width: 48%;
+    pad: 5px 10px;
+    text-align: center;
+
+}
+
+.contenedor2{
+    background-color: transparent;
+    margin: 2% 10%; 
+    width: 70%;
+    text-align:center;
+    align-items: left;
+}
+
+label{
+    font-size: 24px;
+    font-variant: small-caps;
+    text-align: center;
+    color: white;
+}
+
+p{
+    text-align: center;
+    color: turquoise;
+    font-variant: small-caps;
+    font-size: 26px;
+    font-family: monospace;
+}
+
+input{
+    width: 80%;
+    height: 25px;
+    font-size: large;
+    font-family: sans-serif;
+}
+
+.fondito {
+    border: yellowgreen solid 5px;
+    margin: 2% 15%;
+}
+
+.circulito{
+    margin: 0px;
+    padding: 0px;
+    width: fit-content;
+}
+
+.circulito2{
+    margin: 0px;
+    padding: 0px;
+    width: fit-content;
+}
+
+footer{
+    background-color: tomato;
+    margin: 4% 15%;
+    padding: 10px 20px;
+}
+
+h4 {
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-left: 5%;
+    color: thistle;
+}
+
+button {
+    font-variant: small-caps;
+    font-size: large;
+    background-color: chartreuse;
+    color: black;
+}
+
+button:hover {
+    font-variant: small-caps;
+    font-size: large;
+    background-color: white;
+    color: black;
+}
+
+button:active {
+    font-variant: small-caps;
+    font-size: large;
+    background-color: black;
+    color: blanchedalmond;
+}
+
+
