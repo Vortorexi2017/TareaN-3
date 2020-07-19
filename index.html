@@ -44,7 +44,7 @@
         <p>Tarea B</p>
         <div class="contenedor">
             <label for="">Hola Anon!! Decime tu edad:</label><br><br>
-            <input type="text" id="edad">
+            <input type="number" id="edad">
         </div>
 
         <div class="contenedor">
@@ -53,28 +53,28 @@
             <button type="submit" id="mensaje2">Mensaje</button>
             <button type= "reset" id="reset2">Reset</button>
             <br><br>
-            <input type="text" id="recibidor2" disabled placeholder=":D :D">
+            <input type="text" id="recibidor2" disabled placeholder="Texto Secreto">
         </div>
     </div>
          
     <div class="fondito">
         <p>Tarea C</p>
         <div class="contenedor2">
-
+          <form id="formulario">  
             <label>Tenes DNI:</label><br>
-            <input type="radio" id="si" name="dni" value="si" class="circulito">
+            <input type="radio" id="dni1" name="dni" value="si" class="circulito">
             <label for="si" class="circulito2">SI</label><br>
-            <input type="radio" id="no" name="dni" value="no" class="circulito">
+            <input type="radio" id="dni2" name="dni" value="no" class="circulito">
             <label for="no" class="circulito2">NO</label>
            
             <br>  
           
             <label>Decime tu edad:</label><br>
-            <input type="radio" id="age1" name="age" value="30" class="circulito">
+            <input type="radio" id="age1" name="age" value="no" class="circulito">
             <label for="age1" class="circulito2">0 - 17</label><br>
-            <input type="radio" id="age2" name="age" value="60" class="circulito">
-            <label for="age2" class="circulito2">18 - +18</label>
-          
+            <input type="radio" id="age2" name="age" value="si" class="circulito">
+            <label for="age2" class="circulito2">18 - 99</label>
+           
         </div>
 
         <div class="contenedor">
@@ -83,11 +83,14 @@
             <button type="submit" id="mensaje3">Mensaje</button>
             <button type= "reset" id="reset3">Reset</button>
             <br><br>
-            <input type="text" id="recibidor2" disabled placeholder=":D :D">
+            <input type="text" id="recibidor3" disabled placeholder="Texto Secreto">
         </div>
+    </form> 
     </div>
          
     <script src='tarea3.js'></script>
+    <script src='tarea3b.js'></script>
+    <script src='tarea3c.js'></script>
 </body>
 <footer>
     <h4>Este Footer fue diseñado en 1996 pero te lo mostramos hoy en 2020 para más placer </h4>

@@ -7,19 +7,6 @@
 // Imprimir "Hola " y el nombre, " te llamás igual que mi ..."
 // Si no, simplemente imprimir "Hola " + nombre!
 
-//Tarea 2:
-// Preguntar la edad del usuario
-// Hacerle saber si tiene más, menos ó la misma edad que nosotros.
-
-//Tarea 3:
-// Preguntarle al usuario si tiene documento, y que conteste con "si" o "no".
-// Si dice si, preguntarle la edad.
-// Si la edad es mayor a 18, dejarlo entrar al bar.
-// Si la edad es menor a 18, no dejarlo entrar al bar.
-// Si no tiene documento, no dejarlo entrar al bar.
-// Si no entendemos la respuesta, le decimos que no entendimos la respuesta.
-// Punto bonus: SI, NO, Si, No, si, no.
-
 
 //RESOLUCIÓN TAREA A
 
@@ -41,6 +28,7 @@ function compararNombre(){
 
     const $recibidor = document.querySelector('#recibidor');
     const recibidor = $recibidor.value;
+    
     let msgA;
 
     if (tuNombre == minNombre){
@@ -76,12 +64,15 @@ function resetearCampos(){
     const $tuNombre = document.querySelector('#nombre');
     const $recibidor = document.querySelector('#recibidor');
 
-    $tuNombre.value = " ";
+    $tuNombre.value =" ";
     $recibidor.placeholder = "Texto Secreto";
 
 }
 
-// Esto estaria terminado pero hay que agregar validación para que no pueda apretar el boton mensaje con un input vacio!!!!
+/*Esto estaria terminado pero hay que agregar validación para que 
+no pueda apretar el boton mensaje con un input vacio!!!!
+También tengo un problema al apretar el boton reset que me genera
+un error, ya que el código anda en la primer ronda, pero no en la segunda. */
 
 
 // RESOLUCIÓN TAREA B
