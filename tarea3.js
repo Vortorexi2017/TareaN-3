@@ -20,3 +20,69 @@
 // Si no entendemos la respuesta, le decimos que no entendimos la respuesta.
 // Punto bonus: SI, NO, Si, No, si, no.
 
+
+//RESOLUCIÓN TAREA A
+
+document.querySelector('#mensaje').onclick = function(event){
+
+    compararNombre();
+
+    event.preventDefault();
+}
+
+function compararNombre(){
+
+    const minNombre = 'victor';
+    const $tuNombre = document.querySelector('#nombre');
+    const tuNombre = $tuNombre.value.toLowerCase();
+
+    const $listaNombres = document.querySelector('select');
+    const listaNombres = $listaNombres.value;
+
+    const $recibidor = document.querySelector('#recibidor');
+    const recibidor = $recibidor.value;
+    let msgA;
+
+    if (tuNombre == minNombre){
+        msgA = `Hey ${tuNombre} somos tocayos.`
+
+    }else{
+        msgA = `Hey ${tuNombre}.`
+    }
+
+    let msgB;
+
+    if (listaNombres == 3) {
+        msgB = `${msgA} Te llamas igual que mi hermano`;
+    }else if (listaNombres == 6) {
+        msgB = `${msgA} Te llamas igual que mi prima`;
+    }else {
+       msgB = msgA ;
+    };
+
+    $recibidor.placeholder = msgB;
+   
+}
+
+document.querySelector('#reset').onclick = function(event){
+
+    resetearCampos();
+
+    event.preventDefault();
+}
+
+function resetearCampos(){
+
+    const $tuNombre = document.querySelector('#nombre');
+    const $recibidor = document.querySelector('#recibidor');
+
+    $tuNombre.value = " ";
+    $recibidor.placeholder = "Texto Secreto";
+
+}
+
+// Esto estaria terminado pero hay que agregar validación para que no pueda apretar el boton mensaje con un input vacio!!!!
+
+
+// RESOLUCIÓN TAREA B
+
