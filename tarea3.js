@@ -44,10 +44,10 @@ function compararNombre(){
     let msgA;
 
     if (tuNombre == minNombre){
-        msgA = `Hey ${tuNombre} somos tocayos.`
+        msgA = `Hey ${tuNombre} somos tocayos`;
 
     }else{
-        msgA = `Hey ${tuNombre}.`
+        msgA = `Hey ${tuNombre}`;
     }
 
     let msgB;
@@ -57,8 +57,8 @@ function compararNombre(){
     }else if (listaNombres == 6) {
         msgB = `${msgA} Te llamas igual que mi prima`;
     }else {
-       msgB = msgA ;
-    };
+       msgB = msgA;
+    }
 
     $recibidor.placeholder = msgB;
    
